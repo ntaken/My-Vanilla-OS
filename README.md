@@ -6,7 +6,7 @@ My daily driver. I know nothing. Inspiration https://github.com/justsaft/Vanilla
 
 ## Added
 
-Wireshark and allowing ordinary user to do packet capture.
+- Wireshark and allowing ordinary user to do packet capture.
 
 
 ## Use this custom image
