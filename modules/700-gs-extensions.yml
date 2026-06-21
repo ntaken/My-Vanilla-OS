@@ -2,4 +2,5 @@ name: gs-extensions
 type: apt
 sources:
   - packages:
+    - gnome-shell-extension-manager
     - gnome-shell-extension-appindicator
