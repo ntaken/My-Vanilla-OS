@@ -14,7 +14,7 @@ Wireshark and allowing ordinary user to do packet capture.
 If your image is successfully built, you can then point ABRoot to your custom image to use it.
 
 - Edit the configuration file with the command: `abroot config-editor`.
-- Change the "name" entry from something like `vanilla-os/desktop` to `your-github-name/your-image-name` (for example `taukakao/custom`).  [**Note**: All characters must be in lowercase.]
+- Change the "name" entry from something like `vanilla-os/desktop` to `ntaken/my-vanilla-os`
 - Now, Run `abroot upgrade` to switch to your custom image.
 
 ## Explore
