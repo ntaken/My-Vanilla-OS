@@ -3,4 +3,3 @@ type: apt
 sources:
   - packages:
     - gnome-tweaks
-    - gnome-themes-extra
