@@ -1,0 +1,5 @@
+name: gs-extensions
+type: apt
+sources:
+  - packages:
+    - gnome-shell-extension-appindicator
