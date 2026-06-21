@@ -1,0 +1,6 @@
+name: utils
+type: apt
+sources:
+  - packages:
+      - usbutils
+      - vulkan-tools
