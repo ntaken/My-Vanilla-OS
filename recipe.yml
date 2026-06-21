@@ -24,7 +24,7 @@ stages:
     - lpkg --unlock
     - apt-get update
 
- - name: additions
+  - name: additions
     type: includes
     includes:
       - modules/625-wireshark.yml
