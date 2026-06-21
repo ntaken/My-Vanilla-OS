@@ -28,9 +28,9 @@ stages:
     type: includes
     includes:
       - modules/600-utils.yml
+      - modules/603-theming.yml
       - modules/626-wireshark.yml
-
-  # Put your custom actions above this comment
+      - modules/700-gs-extensions.yml
 
   - name: set-image-name-abroot
     type: includes
