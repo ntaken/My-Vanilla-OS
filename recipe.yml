@@ -27,7 +27,7 @@ stages:
   - name: additions
     type: includes
     includes:
-      - modules/625-wireshark.yml
+      - modules/626-wireshark.yml
 
   # Put your custom actions above this comment
 
