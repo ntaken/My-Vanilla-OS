@@ -1,10 +1,8 @@
-# Custom Vib Image
-
-My-Vanilla-OS
+# My-Vanilla-OS
 
 Base is ghcr.io/vanilla-os/desktop:main
 
-Mostly messing around. Inspiration https://github.com/justsaft/Vanilla-Cherry
+My daily driver. I do not know anything. Inspiration https://github.com/justsaft/Vanilla-Cherry
 
 ## Added
 
