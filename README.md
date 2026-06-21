@@ -7,6 +7,11 @@ My daily driver. I know nothing. Inspiration https://github.com/justsaft/Vanilla
 ## Added
 
 - Wireshark and allowing ordinary user to do packet capture.
+- usbutils and vulkan-tools
+- gnome-tweaks
+  - gnome themes  
+- Gnome extensions
+  - App Indicator   
 
 
 ## Use this custom image
