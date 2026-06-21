@@ -2,6 +2,8 @@
 
 My-Vanilla-OS
 
+Base is ghcr.io/vanilla-os/desktop:main
+
 Mostly messing around. Inspiration https://github.com/justsaft/Vanilla-Cherry
 
 ## Added
