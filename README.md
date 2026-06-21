@@ -2,16 +2,14 @@
 
 Base is ghcr.io/vanilla-os/desktop:main
 
-My daily driver. I do not know anything. Inspiration https://github.com/justsaft/Vanilla-Cherry
+My daily driver. I know nothing. Inspiration https://github.com/justsaft/Vanilla-Cherry
 
 ## Added
 
 Wireshark and allowing ordinary user to do packet capture.
 
 
-## Use your custom image
-
-If your image is successfully built, you can then point ABRoot to your custom image to use it.
+## Use this custom image
 
 - Edit the configuration file with the command: `abroot config-editor`.
 - Change the "name" entry from something like `vanilla-os/desktop` to `ntaken/my-vanilla-os`
