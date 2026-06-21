@@ -13,7 +13,7 @@ My daily driver. I know nothing. Inspiration https://github.com/justsaft/Vanilla
 
 - Edit the configuration file with the command: `abroot config-editor`.
 - Change the "name" entry from something like `vanilla-os/desktop` to `ntaken/my-vanilla-os`
-- Now, Run `abroot upgrade` to switch to your custom image.
+- Now, Run `abroot upgrade` to switch to your custom image. (Warning: If you are not allowed to run 'abroot upgrade'because of previous operation. You should change back to your standard name and reboot your computer and try the steps again. If you reboot without successfully running `abroot upgrade` you will break booting of Vanilla OS and need to use a live cd to change back to previous name in /usr/share/abroot/abroot.json.)
 
 ## Explore
 
