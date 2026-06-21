@@ -1,5 +1,5 @@
-name: Custom Vanilla Desktop # Replace this name with your image name
-id: custom # Replace this ID with your image ID
+name: My-Vanilla-OS
+id: my-vanilla-os
 vibversion: 1.0.7
 
 stages:
