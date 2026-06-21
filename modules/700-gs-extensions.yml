@@ -3,5 +3,4 @@ type: apt
 sources:
   - packages:
     - gnome-shell-extension-manager
-    - gnome-shell-extensions
     - gnome-shell-extension-appindicator
