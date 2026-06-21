@@ -1,24 +1,13 @@
 # Custom Vib Image
 
-This template repository is a starting point for creating custom [Vib images](https://github.com/Vanilla-OS/Vib) on top of the [official Vanilla OS images](https://images.vanillaos.org) like [desktop image](https://github.com/Vanilla-OS/desktop-image). It contains a basic recipe and an example module to get you started.
+My-Vanilla-OS
 
-> [!TIP]
-> It is suggested to check the [Vib documentation](https://docs.vanillaos.org/collections/vib) to know more about the recipe format, structure of modules and the supported fields.
+Mostly messing around. Inspiration https://github.com/justsaft/Vanilla-Cherry
 
-## Getting Started
+## Added
 
-- First, click on the <kbd>Use this template</kbd> button in the top right corner, then from the drop-down menu select <kbd>Create a new repository</kbd>. This would create a new repository with the same files and directories as this repository.
-- Go to **Settings → Actions → General** and ensure "_Allow all actions and reusable workflows_" are enabled.
-- Now, clone the repository to your local machine and let's start customizing your image. You can also use the GitHub online editor if you prefer.
-- Open the `vib-build.yml` workflow file in the `.github/workflows` folder and replace the custom image name with an image name of your choosing in line 14.
-- Open the `recipe.yml` file and replace the image name and ID with your image name and ID in lines 1 and 2.
-- Now, perform your additions and modifications to the recipe as per your requirements.
-- If you just want to install `.deb` files, you can just put them in `includes.container/deb-pkgs` (if you choose this option, make sure to keep the .deb file up to date, it will not be upgraded automatically)
-- Optionally, add your modules to the `modules` directory and add them to the package-modules `includes` in `recipe.yml`.
-- You can check the Actions tab in GitHub to see the build progress of your image.
+Wireshark and allowing ordinary user to do packet capture.
 
-> [!NOTE]
-> It is suggested to add `vib-image` and `vib` tags to your repository for your image to be easily discoverable to others.
 
 ## Use your custom image
 
