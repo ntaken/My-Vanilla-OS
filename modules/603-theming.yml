@@ -1,6 +1,6 @@
 name: theming-packages
 type: apt
-source:
+sources:
   packages:
     - gnome-tweaks
     - gnome-themes-extra
