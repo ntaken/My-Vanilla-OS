@@ -1,6 +1,6 @@
 # My-Vanilla-OS
 
-Base is vanilla-os/desktop:main
+Base is ghcr.io/vanilla-os/gnome:latest
 
 My daily driver. I know nothing. Inspiration https://github.com/justsaft/Vanilla-Cherry
 
