@@ -1,16 +1,19 @@
 name: My-Vanilla-OS
 id: my-vanilla-os
-vibversion: 1.0.7
+vibversion: 1.1.0
 
 stages:
 - id: build
-  base: ghcr.io/vanilla-os/gnome:latest # Optionally, Replace this image URL with a different one i.e. nvidia:main, etc
+  base: ghcr.io/vanilla-os/gnome:latest # Optionally, Replace this image URL with a different one i.e. gnome-nvidia:latest, etc
   addincludes: true
   singlelayer: false
   labels:
     maintainer: self-maintained # Optionally, Replace this with your name
   args:
     DEBIAN_FRONTEND: noninteractive # Set the image environment as non-interactive
+  cleanup:
+    - /tmp/*
+    - /var/tmp/*
 
   # Commands to run first before building the modules
   runs:
@@ -32,6 +35,8 @@ stages:
       - modules/626-wireshark.yml
       - modules/700-gs-extensions.yml
 
+  # Put your custom actions above this comment
+
   - name: set-image-name-abroot
     type: includes
     includes:
@@ -43,23 +48,3 @@ stages:
     - apt-get autoremove -y
     - apt-get clean
     - lpkg --lock
-
-  - name: fsguard
-    type: fsguard
-    CustomFsGuard: false
-    FsGuardLocation: "/usr/sbin/FsGuard"
-    GenerateKey: true
-    FilelistPaths: ["/usr/bin"]
-    modules:
-      - name: remove-prev-fsguard
-        type: shell
-        commands:
-          - rm -rf /FsGuard 
-          - rm -f ./minisign.pub ./minisign.key 
-          - chmod +x /usr/sbin/init
-
-  - name: cleanup2
-    type: shell
-    commands:
-      - rm -rf /tmp/*
-      - rm -rf /var/tmp/*
