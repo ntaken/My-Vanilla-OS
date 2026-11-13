@@ -51,7 +51,7 @@ jobs:
           echo "LAST_RUN_ID=$(jq -r '.[0].databaseId' last_run.json)" >> "$GITHUB_ENV"
 
       - name: Download the previous digest
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         continue-on-error: true
         with:
           name: digest
@@ -68,7 +68,7 @@ jobs:
           echo "HAS_UPDATES=$(cmp -s digest.txt last_digest.txt; echo $?)" >> "$GITHUB_ENV"
 
       - name: Upload current digest
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: digest
           path: digest.txt
@@ -106,7 +106,7 @@ jobs:
       packages: write # Allow pushing images to GHCR
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
 
     - uses: vanilla-os/vib-gh-action@v1.1.0
       with:
